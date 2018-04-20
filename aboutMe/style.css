@@ -1,0 +1,71 @@
+
+canvas{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+
+.wrapper{
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+
+}
+
+.photo{
+  text-align: center;
+}
+
+.my-photo{
+max-height: 500px;
+max-width: 100%;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.about-me{
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 30px;
+  padding: 20px;
+
+}
+.skills{
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.icon{
+  height: 64px;
+  margin: 6px;
+}
+
+/*Large Screens */
+@media (min-width:700px) {
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 15px;
+  max-width: 1000px;
+  margin-top: 100px;
+
+}
+.wrapper >*{
+  padding: 2em;
+  }
+
+li{
+    display: inline;
+  }
+.my-photo{
+  height: 1000px;
+  }
+}
